@@ -1,6 +1,6 @@
 docker build -t mminkov/multi-client:latest -t mminkov/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t mminkov/multi-server:latest -t mminkov/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t mminkov/multi-worker:latest -t mminkov/multi-worker:$SHA -f ./client/Dockerfile ./worker
+docker build -t mminkov/multi-worker:latest -t mminkov/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push mminkov/multi-client:latest
 docker push mminkov/multi-server:latest
